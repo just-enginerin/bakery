@@ -52,3 +52,7 @@ apple_cinn = Muffin.new("Apple Cinnamon", "These apple muffins are springy, boun
 lemon_poppy = Muffin.new("Lemon Poppy Seed", "These lemon poppy seed muffins are baked to perfection with fresh lemon juice and lemon zest. All that lemon flavor gets enhanced by a sweet, lemon glaze drizzled on top. The poppy seeds add the slight texture that make these muffins really pop!", "https://www.twopeasandtheirpod.com/wp-content/uploads/2014/01/Lemon-Poppy-Seed-Muffins-6.jpg")
 
 pistachio = Muffin.new("Pistachio", "These indulgent muffins are baked using our quality recipe, and they are jam-packed with crunchy walnuts and pistachios. Each bite offers a burst of tasty flavor and the moist, airy texture allows every morsel to melt in your mouth.", "https://freshaprilflours.com/wp-content/uploads/2018/08/pistachio-muffins-5.jpg")
+
+@@cakes = [red_velvet, chocolate, cheesecake]
+@@cookies = [chocolate_chip, oatmeal, peanut_butter]
+@@muffins = [apple_cinn, lemon_poppy, pistachio]
