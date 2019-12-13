@@ -1,0 +1,11 @@
+<% @@cookies.each do |cookie| %>
+<p>Name: <%= cookie.name %></p>
+<p>Description: <%= cookie.description %></p>
+<p>Price: $<%= cookie.price %></p>
+<% if cookie.vegan == true %>
+    <p>This item is vegan.</p>
+<% else %>
+    <p>This item contains dairy.</p>
+<% end %>
+<img src="<%= cookie.image %>"/>
+<% end %>

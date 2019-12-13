@@ -1,0 +1,11 @@
+<% @@cakes.each do |cake| %>
+<p>Name: <%= cake.name %></p>
+<p>Description: <%= cake.description %></p>
+<p>Price: $<%= cake.price %></p>
+<% if cake.vegan == true %>
+    <p>This item is vegan.</p>
+<% else %>
+    <p>This item contains dairy.</p>
+<% end %>
+<img src="<%= cake.image %>"/>
+<% end %>

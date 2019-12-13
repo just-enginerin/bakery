@@ -1,0 +1,11 @@
+<% @@muffins.each do |muffin| %>
+<p>Name: <%= muffin.name %></p>
+<p>Description: <%= muffin.description %></p>
+<p>Price: $<%= muffin.price %></p>
+<% if muffin.vegan == true %>
+    <p>This item is vegan.</p>
+<% else %>
+    <p>This item contains dairy.</p>
+<% end %>
+<img src="<%= muffin.image %>"/>
+<% end %>
