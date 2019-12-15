@@ -1,12 +1,102 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dough Re Mi</title>
-    <link href="main.css" rel="stylesheet"/>
-</head>
-<body>
-<img src="./logo.png">
+<nav id="nav-grid">
+    <img src="./logo.png" id="logo">
+
+    <a href="/about" id="about-nav" class="nav-item"><img src="https://cdn1.iconfinder.com/data/icons/winter-82/32/gingerbread_man-512.png" class="nav-item-img">About Us
+    </a>
+
+    <a href="/visit" id="visit-nav" class="nav-item"><img src="./visit.png" class="nav-item-img">Visit Us
+    </a>
+
+    <a href="/cookies" id="cookie-nav" class="nav-item"><img src="https://www.freeiconspng.com/uploads/cookie-png-transparent-images-background-23.png" class="nav-item-img">Shop Cookies
+    </a>
+
+    <a href="/cakes" id="cake-nav" class="nav-item"><img src="https://images.vexels.com/media/users/3/151613/isolated/preview/71680abcac6aa750c99fa2589a48998b-cherry-cake-slice-flat-icon-by-vexels.png" class="nav-item-img">Shop Cakes
+    </a>
+
+    <a href="/muffins" id="muffin-nav" class="nav-item">
+    <img src="https://icons-for-free.com/iconfiles/png/512/flat+version+svg+muffin-1319964487460469070.png" class="nav-item-img">Shop Muffins
+    </a>
+</nav>
 
 
-</body>
-</html>
+<style>
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #e4aac7;
+        background-image: url(./home.jpg);
+        background-size: auto;
+    }
+
+    #logo {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        grid-area: logo;
+    }
+
+    #nav-grid {
+        display: grid;
+        grid-template: 75% 25% / auto 20% 25% 20% auto;
+        grid-template-areas: 
+        "... logo logo logo ..."
+        "cakes cakes muffins cookies cookies";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        overflow: hidden;
+        place-items: end center;
+        width: 50%;
+        margin: 4% auto 0;
+        /* background-color: #72471C; */
+        padding: 0 10px 30px;
+    }
+
+    #muffin-nav {
+        grid-area: muffins;
+    }
+
+    #cake-nav {
+        grid-area: cakes;
+        justify-self: center;
+    }
+
+    #cookie-nav {
+        grid-area: cookies;
+        justify-self: center;
+    }
+
+    .nav-item {
+        display: grid;
+        grid-template: auto auto / auto;
+        justify-items: center;
+        grid-row-gap: 10px;
+        font-family: 'Leckerli One', cursive;
+        font-size: 1.5em;
+        color: rgb(54, 34, 20);
+        text-decoration: none;
+    }
+
+    .nav-item img {
+        width: 80px;
+        posit
+    }
+    .nav-item:hover {
+        color: rgb(133, 85, 51);
+        animation-name: hover-float;
+        animation-duration: 1s;
+    }
+
+    @keyframes hover-float {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.1, 1.1);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+</style>
