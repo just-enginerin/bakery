@@ -1,11 +1,15 @@
-<% @@muffins.each do |muffin| %>
-<p>Name: <%= muffin.name %></p>
-<p>Description: <%= muffin.description %></p>
-<p>Price: $<%= muffin.price %></p>
-<% if muffin.vegan == true %>
-    <p>This item is vegan.</p>
-<% else %>
-    <p>This item contains dairy.</p>
-<% end %>
-<img src="<%= muffin.image %>"/>
-<% end %>
+<div class="pastry-grid">
+    <% @@muffins.each do |muffin| %>
+        <div class="pastry">
+            <p class="pastry-name">Name: <%= muffin.name %></p>
+            <p class="pastry-desc">Description: <%= muffin.description %></p>
+            <p class="price">Price: $<%= muffin.price %></p>
+            <% if muffin.vegan == true %>
+                <p class="vegan">This item is vegan.</p>
+            <% else %>
+                <p class="vegan">This item contains dairy.</p>
+            <% end %>
+            <img src="<%= muffin.image %>" class="pastry-img"/>
+        </div>
+    <% end %>
+</div>

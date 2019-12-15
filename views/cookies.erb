@@ -1,11 +1,15 @@
-<% @@cookies.each do |cookie| %>
-<p>Name: <%= cookie.name %></p>
-<p>Description: <%= cookie.description %></p>
-<p>Price: $<%= cookie.price %></p>
-<% if cookie.vegan == true %>
-    <p>This item is vegan.</p>
-<% else %>
-    <p>This item contains dairy.</p>
-<% end %>
-<img src="<%= cookie.image %>"/>
-<% end %>
+<div class="pastry-grid">
+    <% @@cookies.each do |cookie| %>
+        <div class="pastry">
+            <p class="pastry-name">Name: <%= cookie.name %></p>
+            <p class="pastry-desc">Description: <%= cookie.description %></p>
+            <p class="price">Price: $<%= cookie.price %></p>
+            <% if cookie.vegan == true %>
+                <p class="vegan">This item is vegan.</p>
+            <% else %>
+                <p class="vegan">This item contains dairy.</p>
+            <% end %>
+            <img src="<%= cookie.image %>" class="pastry-img"/>
+        </div>
+    <% end %>
+</div>

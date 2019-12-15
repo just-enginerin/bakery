@@ -1,11 +1,15 @@
-<% @@cakes.each do |cake| %>
-<p>Name: <%= cake.name %></p>
-<p>Description: <%= cake.description %></p>
-<p>Price: $<%= cake.price %></p>
-<% if cake.vegan == true %>
-    <p>This item is vegan.</p>
-<% else %>
-    <p>This item contains dairy.</p>
-<% end %>
-<img src="<%= cake.image %>"/>
-<% end %>
+<div class="pastry-grid">
+    <% @@cakes.each do |cake| %>
+        <div class="pastry">
+            <p class="pastry-name">Name: <%= cake.name %></p>
+            <p class="pastry-desc">Description: <%= cake.description %></p>
+            <p class="price">Price: $<%= cake.price %></p>
+            <% if cake.vegan == true %>
+                <p class="vegan">This item is vegan.</p>
+            <% else %>
+                <p class="vegan">This item contains dairy.</p>
+            <% end %>
+            <img src="<%= cake.image %>" class="pastry-img"/>
+        </div>
+    <% end %>
+</div>

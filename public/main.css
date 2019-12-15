@@ -1,13 +1,14 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    background-color: #f2d4ee;
+    background-color: #f8d3e4;
 }
 
 #logo {
     display: block;
     margin: 0 auto;
     width: 90px;
+    grid-area: logo;
 }
 
 #nav-grid {
@@ -16,9 +17,10 @@ body {
     grid-template-areas: "logo visit cakes muffins cookies about";
     grid-gap: 20px;
     place-items: end center;
-    padding: 0 10px 30px;
+    padding: 0 10px 20px;
     width: 90%;
-    margin: 2% auto 5px;
+    margin: 15px auto 25px;
+    border-bottom: 2px solid white;
 }
 
 .nav-item {
@@ -95,4 +97,22 @@ body {
     grid-area: info;
     line-height: 2em;
     font-size: 1.2em;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Leckerli One', cursive;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 200;
+    color: #e93086;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
 }

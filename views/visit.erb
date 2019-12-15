@@ -1,0 +1,52 @@
+<div class="grid">
+    <img src="https://i.pinimg.com/originals/34/12/3d/34123de9ba30b71a9546f8bf016014c6.jpg" class="img">
+    <div class="info">
+        <p id="info-desc">Welcome to a dreamy world in which to relax and enjoy exquisite tastes. As much for interior lovers as it is for cake lovers, each and every detail of the Dough Re Mi has been approached with the upmost care and attention. Come visit our pink little shop and taste our edible works of art for yourself! We have a stunning selection of finely designed cakes, muffins, and cookies available for your enjoyment, each with a unique sweet and savoury flavor.</p>
+        <div id="address">
+            <h2>Address & Opening Hours</h2>
+            <ul>219 King's Road, Chelsea, London SW3 5EJ
+                <li>Monday 10am - 8pm</li>
+                <li>Tuesday 10am - 8pm</li>
+                <li>Wednesday 10am -  8pm</li>
+                <li>Thursday 10am -  8pm</li>
+                <li>Friday 10am -  8pm</li>
+                <li>Saturday 8.30am -  8pm<br>
+                <li>Sunday 10am - 8pm<br>
+            </ul>
+        </div>
+
+        <div id="contact">
+        <h2>Contact Us</h2>
+            <ul>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: support@doughremi.com</li>
+                <li>@doughremi</li>
+                <li>#doughremi</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+<style>
+    .grid {
+        align-items: center;
+    }
+
+    .info {
+        font-size: 1em;
+        display: grid;
+        grid-template: auto auto / auto auto;
+        grid-template-areas:
+        "info-desc info-desc"
+        "address contact"
+    }
+
+    #info-desc {
+        grid-area: info-desc;
+    }
+
+    #address {
+        grid-area: address;
+    }
+</style>
