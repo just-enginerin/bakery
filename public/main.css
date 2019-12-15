@@ -115,3 +115,66 @@ ul {
     list-style-type: none;
     text-align: center;
 }
+
+.pastry-grid {
+    display: grid;
+    grid-template: auto / auto auto auto;
+    grid-template-areas: "pastry1 pastry2 pastry3";
+    width: 100%;
+}
+
+.pastry, .pastry-img {
+    width: 80%;
+    margin: 0 auto;
+}
+.pastry1 {
+    grid-area: pastry1;
+}
+
+.pastry2 {
+    grid-area: pastry2;
+}
+
+.pastry3 {
+    grid-area: pastry3;
+}
+
+.pastry {
+    display: grid;
+    grid-template: auto auto auto auto / 10% 85%;
+    grid-template-areas:
+        "name name"
+        "img img"
+        "price price"
+        "desc desc";
+}
+
+.pastry-name {
+    grid-area: name;
+}
+
+.pastry-img {
+    grid-area: img;
+}
+
+.pastry-desc {
+    grid-area: desc;
+}
+
+.price {
+    grid-area: price;
+    text-align: center;
+}
+
+.img-container {
+    grid-area: img;
+    position: relative;
+}
+
+.vegan {
+    position: absolute;
+    z-index: 50;
+    width: 15%;
+    right: 25%;
+    bottom: 28%;
+}

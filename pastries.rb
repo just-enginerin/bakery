@@ -35,9 +35,9 @@ class Cake < Pastry
     end
 end
 
-red_velvet = Cake.new("Red Velvet", "The best Red Velvet Cake is made from scratch with a unique flavor and tender, moist crumb that pairs wonderfully with a tangy, sweet cream cheese frosting. Red velvet cake is NOT the same as chocolate cake, even though it has some cocoa powder in it and slight chocolate undertones. Nor is red velvet cake just a white cake that is dyed red. Red velvet really does have its own unique flavor that is derived from the small amount of cocoa combined with butter and buttermilk. It has an old-fashioned flavor and quality to it that families across the globe love.", "https://live.staticflickr.com/5224/5679555326_1530c02390_z.jpg")
+red_velvet = Cake.new("Red Velvet", "The best Red Velvet Cake is made from scratch with a unique flavor and tender, moist crumb that pairs wonderfully with a tangy, sweet cream cheese frosting. Red velvet really has its own unique, old-fashioned flavor that is derived from the small amount of cocoa combined with butter and buttermilk. Come try this classic family favorite for yourself!", "https://live.staticflickr.com/5224/5679555326_1530c02390_z.jpg")
 
-chocolate = Cake.new("Chocolate", "This is the best chocolate cake ever, vegan or otherwise. It’s super moist, rich and full of chocolate. The frosting is a mouthwatering, ultra rich chocolate buttercream. If you're craving a chocolate fix, give this cake a try!", true, "https://www.noracooks.com/wp-content/uploads/2018/07/IMG_8885.jpg")
+chocolate = Cake.new("Chocolate", "This is the best chocolate cake ever, vegan or otherwise. It’s super moist, rich and full of chocolate. The frosting is a mouthwatering, ultra rich chocolate buttercream. If you're craving a chocolate fix, give this cake a try!", true, "https://www.noracooks.com/wp-content/uploads/2018/07/IMG_8878.jpg")
 
 cheesecake = Cake.new("New York Style Cheese", "Our New York Cheesecakes have three layers, starting with a crumbly Graham Cracker Crust. Next, is a deliciously rich, and tangy sweet, cream cheese filling that has a wonderfully dense and creamy smooth texture. The top layer is lightly sweetened sour cream. You can enjoy this exquisite cake on its own, or you can request it with fresh berries.", "https://live.staticflickr.com/4804/45020809175_734d014638_b.jpg")
 

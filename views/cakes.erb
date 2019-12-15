@@ -1,15 +1,43 @@
 <div class="pastry-grid">
     <% @@cakes.each do |cake| %>
-        <div class="pastry">
-            <p class="pastry-name">Name: <%= cake.name %></p>
-            <p class="pastry-desc">Description: <%= cake.description %></p>
-            <p class="price">Price: $<%= cake.price %></p>
+        <div class="pastry pastry<%= @@cakes.index(cake)+1 %>">
+
             <% if cake.vegan == true %>
-                <p class="vegan">This item is vegan.</p>
+                <div class="img-container">
+                    <img src="<%= cake.image %>" class="pastry-img"/>
+                    <img src="https://www.nicepng.com/png/full/129-1292042_inquisitive-discussion-about-veganism-on-abc-radio-veganism.png" class="vegan"/>
+                </div>
             <% else %>
-                <p class="vegan">This item contains dairy.</p>
+                <img src="<%= cake.image %>" class="pastry-img"/>
             <% end %>
-            <img src="<%= cake.image %>" class="pastry-img"/>
+
+            <h2 class="pastry-name"><span><%= cake.name %> Cake</h2>
+            <p class="pastry-desc"><%= cake.description %></p>
+            <p class="price">$<%= cake.price %></p>
         </div>
     <% end %>
 </div>
+
+<style>
+    .pastry1 .pastry-img {
+        clip-path: circle(38% at 42% 46%);
+        margin: 20px 13% 0;
+        width: 90%;
+    }
+
+    .pastry2 .pastry-img {
+        clip-path: circle(38% at 50% 55%);
+        margin: -115px 20% -40px;
+        width: 55%;
+    }
+
+    .pastry3 .pastry-img {
+        clip-path: circle(38% at 48% 48%);
+        width: 90%;
+        margin: 20px 5% 0;
+    }
+
+    .pastry2 .price, .pastry2 .pastry-desc {
+        margin: -50px 0 0;
+    }
+</style>
