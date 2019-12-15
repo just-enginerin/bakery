@@ -54,5 +54,5 @@ lemon_poppy = Muffin.new("Lemon Poppy Seed", "These lemon poppy seed muffins are
 pistachio = Muffin.new("Pistachio", "These indulgent muffins are baked using our quality recipe, and they are jam-packed with crunchy walnuts and pistachios. Each bite offers a burst of tasty flavor and the moist, airy texture allows every morsel to melt in your mouth.", "https://freshaprilflours.com/wp-content/uploads/2018/08/pistachio-muffins-5.jpg")
 
 @@cakes = [red_velvet, chocolate, cheesecake]
-@@cookies = [chocolate_chip, oatmeal, peanut_butter]
+@@cookies = [peanut_butter, chocolate_chip, oatmeal]
 @@muffins = [apple_cinn, lemon_poppy, pistachio]

@@ -11,9 +11,54 @@
                 <img src="<%= cookie.image %>" class="pastry-img"/>
             <% end %>
 
-            <h2 class="pastry-name"><span><%= cookie.name %> cookie</h2>
+            <h2 class="pastry-name"><span><%= cookie.name %> Cookie</h2>
             <p class="pastry-desc"><%= cookie.description %></p>
             <p class="price">$<%= cookie.price %></p>
         </div>
     <% end %>
 </div>
+
+<style>
+
+    .pastry1 .pastry-img {
+        clip-path: circle(35% at 45% 50%);
+        margin: -80px 15% 0;
+        width: 75%;
+    }
+
+    .pastry2 .pastry-img {
+        clip-path: circle(35% at 43% 52%);
+        margin: -80px 15% 0;
+        width: 83%;
+    }
+
+    .pastry3 .pastry-img {
+        clip-path: circle(35% at 55% 36%);
+        margin: -10px 10% 0;
+        width: 74%;
+    }
+
+    .vegan {
+        bottom: 35%;
+        right: 20%;
+    }
+
+    .pastry1 .price {
+        margin: -50px 0 0;
+    }
+
+    .pastry2 .price {
+        margin: -45px 0 0;
+    }
+
+    .pastry3 .price {
+        margin: -110px 0 0;
+    }
+
+    .pastry1 .pastry-desc, .pastry2 .pastry-desc {
+        margin: -20px 0 0;
+    }
+
+    .pastry3 .pastry-desc {
+        margin: -60px 0 0;
+    }
