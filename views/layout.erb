@@ -2,14 +2,32 @@
 <html>
 <head>
     <title>Dough Re Mi</title>
-    <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Quicksand&display=swap" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet"/>
     <link rel="icon" 
       type="image/png" 
       href="./logo.png">
 </head>
 <body>
+    <nav id="nav-grid">
+        <a href="/" id="home-nav"> <img src="./logo.png" id="logo"></a>
 
+        <a href="/about" id="about-nav" class="nav-item"><img src="https://cdn1.iconfinder.com/data/icons/winter-82/32/gingerbread_man-512.png" class="nav-item-img">About Us
+        </a>
+
+        <a href="/visit" id="visit-nav" class="nav-item"><img src="./visit.png" class="nav-item-img">Visit Us
+        </a>
+
+        <a href="/cookies" id="cookie-nav" class="nav-item"><img src="https://www.freeiconspng.com/uploads/cookie-png-transparent-images-background-23.png" class="nav-item-img">Shop Cookies
+        </a>
+
+        <a href="/cakes" id="cake-nav" class="nav-item"><img src="https://images.vexels.com/media/users/3/151613/isolated/preview/71680abcac6aa750c99fa2589a48998b-cherry-cake-slice-flat-icon-by-vexels.png" class="nav-item-img">Shop Cakes
+        </a>
+
+        <a href="/muffins" id="muffin-nav" class="nav-item">
+        <img src="https://icons-for-free.com/iconfiles/png/512/flat+version+svg+muffin-1319964487460469070.png" class="nav-item-img">Shop Muffins
+        </a>
+    </nav>
     <%= yield %>
 
 </body>

@@ -22,5 +22,5 @@ get '/muffins' do
 end
 
 get '/visit' do
-  erb "visit"
+  erb :visit
 end

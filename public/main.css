@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f2d4ee;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+}
+
+#nav-grid {
+    display: grid;
+    grid-template: auto / auto auto auto auto auto auto;
+    grid-template-areas: "logo visit cakes muffins cookies about";
+    grid-gap: 20px;
+    place-items: end center;
+    padding: 0 10px 30px;
+    width: 90%;
+    margin: 2% auto 5px;
+}
+
+.nav-item {
+    display: grid;
+    grid-template: auto auto / auto;
+    justify-items: center;
+    grid-row-gap: 10px;
+    font-family: 'Leckerli One', cursive;
+    font-size: 1.2em;
+    color: rgb(54, 34, 20);
+    text-decoration: none;
+}
+
+.nav-item img {
+    width: 50px;
+}
+
+#muffin-nav {
+    grid-area: muffins;
+}
+
+#cake-nav {
+    grid-area: cakes;
+}
+
+#cookie-nav {
+    grid-area: cookies;
+}
+
+#visit-nav {
+    grid-area: visit;
+}
+
+#about-nav {
+    grid-area: about;
+}
+
+.nav-item:hover, #home-nav:hover {
+    color: rgb(133, 85, 51);
+    animation-name: hover-float;
+    animation-duration: 1s;
+}
+
+@keyframes hover-float {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-gap: 50px;
+    grid-template-areas: "img info";
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.img {
+    grid-area: img;
+    width: 80%;
+}
+
+.info {
+    grid-area: info;
+    line-height: 2em;
+    font-size: 1.2em;
+}
