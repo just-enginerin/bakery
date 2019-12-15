@@ -39,7 +39,8 @@
         grid-template: auto auto / auto auto;
         grid-template-areas:
         "info-desc info-desc"
-        "address contact"
+        "address contact";
+        justify-items: center;
     }
 
     #info-desc {
@@ -48,5 +49,11 @@
 
     #address {
         grid-area: address;
+        justify-self: end;
+    }
+
+    #contact {
+        grid-area: contact;
+        justify-self: end;
     }
 </style>
