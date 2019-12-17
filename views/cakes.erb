@@ -13,7 +13,7 @@
 
             <h2 class="pastry-name"><span><%= cake.name %> Cake</h2>
             <p class="pastry-desc"><%= cake.description %></p>
-            <p class="price">$<%= cake.price %></p>
+            <p class="price"><b>$<%= cake.price %></b></p>
         </div>
     <% end %>
 </div>
@@ -21,32 +21,48 @@
 <style>
     .pastry1 .pastry-img {
         clip-path: circle(38% at 42% 46%);
-        margin: 20px 13% 0;
+        margin: 10px 13% 0;
         width: 90%;
+    }
+
+    .pastry1 .price {
+        margin-top: 0px;
+    }
+
+    .pastry1 .pastry-desc {
+        margin-top: 10px;
     }
 
     .pastry2 .pastry-img {
         clip-path: circle(38% at 50% 55%);
-        margin: -125px 20% -40px;
-        width: 55%;
+        margin: -155px 20% -40px;
+        width: 57%;
+    }
+
+    .pastry2 .price {
+        margin: -85px 0 0;
+    } 
+    
+    .pastry2 .pastry-desc {
+        margin: -143px 0 0;
     }
 
     .pastry3 .pastry-img {
         clip-path: circle(38% at 48% 48%);
         width: 90%;
-        margin: 20px 5% 0;
+        margin: 0px 5% 0;
     }
 
-    .pastry2 .price {
-        margin: -65px 0 0;
-    } 
-    
-    .pastry2 .pastry-desc {
-        margin: -103px 0 0;
+    .pastry3 .price {
+         margin-top: -5px;
+    }
+
+    .pastry3 .pastry-desc {
+        margin-top: -25px;
     }
 
     .vegan {
         right: 25%;
-        bottom: 40%;
+        bottom: 50%;
     }
 </style>

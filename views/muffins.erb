@@ -13,7 +13,7 @@
 
             <h2 class="pastry-name"><span><%= muffin.name %> Muffin</h2>
             <p class="pastry-desc"><%= muffin.description %></p>
-            <p class="price">$<%= muffin.price %></p>
+            <p class="price"><b>$<%= muffin.price %></b></p>
         </div>
     <% end %>
 </div>
@@ -22,13 +22,17 @@
     .pastry1 .pastry-img {
         clip-path: circle(40% at 50% 52%);
         width: 60%;
-        margin: -65px 15% 0;
+        margin: -45px 15% 0;
     }
 
     .pastry2 .pastry-img {
         clip-path: circle(37% at 50% 48%);
         width: 100%;
-        margin: 15px auto;
+        margin: 5px auto 5px;
+    }
+
+    .pastry2 .pastry-desc {
+        margin-top: -20px;
     }
 
     .pastry3 .pastry-img {
@@ -39,6 +43,10 @@
 
     .pastry1 .price {
         margin: -30px 0 0;
+    }
+
+    .pastry2 .price {
+        margin-top: -5px;
     }
 
     .pastry3 .price {
@@ -59,6 +67,6 @@
 
     .vegan {
         right: 25%;
-        bottom: 22%;
+        bottom: 17%;
     }
 </style>
