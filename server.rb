@@ -10,11 +10,11 @@ get '/' do
 end
 
 post '/' do
-    account_sid = ENV['TWILIO_ACCOUNT_SID']
-    auth_token = ENV['TWILIO_AUTH_TOKEN']
+    account_sid = AC8e589259099a2ed3845a37922954ab8a
+    auth_token = ee1dcb6ed547aa09b7e45bc4046cc5ba
     client = Twilio::REST::Client.new(account_sid, auth_token)
 
-    from = ENV['TWILIO_PHONE_NUM']
+    from = +19252334368
     to = params['user_phone_num']
 
     client.messages.create(
